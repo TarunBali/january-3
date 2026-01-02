@@ -134,7 +134,7 @@
     </div>
   </div>
 
-  <div id="clock">Nov 01 2025, 12:00</div>
+  <div id="clock">Jan 02 2026, 12:00</div>
   <div id="instructions">
     <div class="arrow">→</div>
     <p>Swipe to rotate Earth</p>
@@ -145,7 +145,7 @@
   <script>
     let scene, camera, renderer, earth, sun, moon;
     // Update Date here
-    let startTime = new Date(2025, 10, 1).getTime();
+    let startTime = new Date(2026, 0, 2).getTime();
     let currentTime = startTime;
     let isDragging = false;
     let previousPosition = { x: 0 };
@@ -250,7 +250,7 @@
       const timeDelta = (delta / window.innerWidth) * 86400000;
       currentTime += timeDelta;
 
-      const maxTime = new Date(2025, 10, 2).getTime();
+      const maxTime = new Date(2026, 00, 3).getTime();
             if (currentTime >= maxTime) {
         currentTime = maxTime;
         if (navigator.vibrate) navigator.vibrate(200);
@@ -312,7 +312,7 @@
 
       document.body.appendChild(messageElement);
 
-      const message = "It's 2nd November today...\nToday's a very special day.";
+      const message = "It's 3rd January today...\nToday's a very special day.";
       let i = 0;
 
       function typeWriter() {
@@ -347,5 +347,6 @@
   </script>
 </body>
 </html>
+
 
 
